@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>E-Commerce Product page | Challenge |Frontend mentor.io</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+  <div class="sideMenu">
+    <img src="img/icon-close.svg" class="close_sideMenu" alt="">
+
+      <ul class="nav_items_list_column">
+        <li class="nav_item">Collections</li>
+        <li class="nav_item">Men</li>
+        <li class="nav_item">Women</li>
+        <li class="nav_item">About</li>
+        <li class="nav_item">Contact</li>
+      </ul>
+  </div>
+  <div id="color-overlay"></div>
+  <header>
+    <img src="img/icon-menu.svg" id="menu" alt="icon menu">
+    <img class="logo" src="img/logo.svg" alt="logo">
+    <nav>
+      <ul class="nav_items_list">
+        <li class="nav_item">Collections</li>
+        <li class="nav_item">Men</li>
+        <li class="nav_item">Women</li>
+        <li class="nav_item">About</li>
+        <li class="nav_item">Contact</li>
+      </ul>
+    </nav>
+
+    <div class="cart_account">
+      <img class="cart1" src="img/icon-cart.svg" alt="icon cart">
+      <img class="avatar" src="img/image-avatar.png" alt="avatar">
+    </div>
+  </header>
+
+  <hr />
+  <div class="slideshow-container">
+    <img src="img/icon-close.svg" class="close" alt="icon-close"/>
+    <div class="block">
+      <img src="img/icon-previous.svg" class="previous" onclick="plusSlides(-1)"/>
+      <div class="slides">
+        <img class="active" src="img/image-product-1.jpg" alt="product 1"></div>
+      <div class="slides">
+        <img src="img/image-product-2.jpg" alt="product 2"></div>
+      <div class="slides">
+        <img src="img/image-product-3.jpg" alt="product 3"></div>
+      <div class="slides">
+        <img src="img/image-product-4.jpg" alt="product 4"></div>
+      <img src="img/icon-next.svg"  class="next" onclick="plusSlides(1)"></div>
+   
+    <div class="thumbs"> 
+    <div class="oneThumb activeBox">
+      <img class="activeThumb" src="img/image-product-1-thumbnail.jpg" alt="product 1 thumbnail" onclick="currentSlide(1)"/>
+    </div>
+    <div class="twoThumb">
+      <img src="img/image-product-2-thumbnail.jpg" alt="product thumbnail 2" onclick="currentSlide(2)"/>
+    </div>
+    <div class="threeThumb">
+      <img src="img/image-product-3-thumbnail.jpg" alt="product thumbnail 3" onclick="currentSlide(3)"/>
+    </div>
+    <div class="fourThumb">
+      <img src="img/image-product-4-thumbnail.jpg" alt="product thumbnail 4" onclick="currentSlide(4)"/>
+    </div>
+  </div>
+</div>
+  </div>
+  <main>
+    <div class="left">
+        <div class="large">
+          <img class="one active" src="img/image-product-1.jpg" alt="image-product-1" />
+         <img src="img/image-product-2.jpg" alt="image-product-2" class="two">
+         <img src="img/image-product-3.jpg" alt="image-product-3" class="three">
+         <img src="img/image-product-4.jpg" alt="image-product-4" class="four">
+        </div>
+        <div class="thumbnail">
+          <div class="oneThumb activeBox">
+            <img class="activeThumb" src="img/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail" onclick="currentImage(0)" />
+          </div>
+          <div class="twoThumb">
+            <img src="img/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail" onclick="currentImage(1)"/>
+          </div>
+          <div class="threeThumb">
+            <img src="img/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail" onclick="currentImage(2)"/>
+          </div>
+          <div class="fourThumb">
+            <img src="img/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail" onclick="currentImage(3)"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="container">
+        <h6 class="company">SNEAKER COMPANY</h6>
+        <h1 class="product">Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="after-discount">
+          <h2 class="price">$125.00</h2>
+          <h5 class="discount">50%</h5>
+        </div>
+        <h5 class="before-discount">$250.00</h5>
+        <div class="cart">
+            <img src="img/icon-minus.svg" class="minus" alt="icon-minus">   
+       <h6 class="num">0</h6>
+            <img src="img/icon-plus.svg" class="plus" alt="icon-plus">     
+       <button class="btn"> <img src="img/icon-cart.svg"> Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="img/scriptjs.js"></script>
+</body>
+</html>
